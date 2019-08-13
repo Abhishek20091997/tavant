@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class HelloWorldTest {
 
 	@Test
-	void test() {
+	void testCheckMessage() {
 		HelloWorld hello = new HelloWorld();
 		String actual = hello.dispMessage();
 		String expected ="Hello World.";
