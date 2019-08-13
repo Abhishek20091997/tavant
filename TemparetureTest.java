@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class TemperatureTest {
 
 	@Test
-	void test() {
+	void testConvert0FarenheittoCelsius() {
 
 		Temperature tem=new Temperature();
 		double actual = tem.convertToCelsius(0);
@@ -15,7 +15,7 @@ class TemperatureTest {
 		assertEquals(actual,expect);
 
 	}
-	void test1() {
+	void testConvert10FarenheittoCelsius() {
 
 		Temperature tem=new Temperature();
 		double actual = tem.convertToCelsius(10);
@@ -23,7 +23,7 @@ class TemperatureTest {
 		assertEquals(actual,expect);
 
 	}
-	void test2() {
+	void testConvert0CelsiusToFarenheit() {
 		
 		Temperature tem=new Temperature();
 		double actual = tem.convertToFarenheit(0);
@@ -31,7 +31,7 @@ class TemperatureTest {
 		assertEquals(actual,expect);
 
 	}
-    void test3() {
+    void testConvert10CelsiusToFarenheit() {
 		
 		Temperature tem=new Temperature();
 		double actual = tem.convertToFarenheit(10);
