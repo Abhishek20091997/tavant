@@ -7,42 +7,42 @@ import org.junit.jupiter.api.Test;
 class MarksValidatorTest {
 
 	@Test
-	void test() {
+	void testPassfor20() {
 		MarksValidator mark= new MarksValidator();
 		Boolean actual = mark.isPass(20);
 		Boolean expect = false;
 		assertEquals(actual,expect);
 
 	}
-	void test1() {
+	void testPassfor50() {
 		MarksValidator mark= new MarksValidator();
 		Boolean actual = mark.isPass(50);
 		Boolean expect = true;
 		assertEquals(actual,expect);
 
 	}
-	void test2() {
+	void testGradefor60() {
 		MarksValidator mark= new MarksValidator();
 		String actual = mark.markGrade(61);
 		String expect = "C";
 		assertEquals(actual,expect);
 
 	}
-	void test3() {
+	void testGradefor9() {
 		MarksValidator mark= new MarksValidator();
 		String actual = mark.markGrade(9);
 		String expect = "D";
 		assertEquals(actual,expect);
 
 	}
-	void test4() {
+	void testGradefor61() {
 		MarksValidator mark= new MarksValidator();
 		String actual = mark.Switcher(61);
 		String expect = "C";
 		assertEquals(actual,expect);
 
 	}
-	void test5() {
+	void testGradefor9() {
 		MarksValidator mark= new MarksValidator();
 		String actual = mark.Switcher(9);
 		String expect = "D";
